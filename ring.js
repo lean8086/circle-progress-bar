@@ -9,7 +9,7 @@
 		toRadians = Math.PI / 180,
 		r = 100;
 
-	function update() {
+	function draw() {
 		// Update the wheel giving to it a value in degrees,
 		// getted from the percentage of the input value
 		// a.k.a. (value * 360) / 100
@@ -30,13 +30,11 @@
 		text.textContent = range.value;
 	}
 
-	range.addEventListener('change', update);
-
-	window.onload = function () {
-		// Translate the center axis to a half of total size
-		ring.setAttribute('transform', 'translate(' + r + ', ' + r + ')');
-		// Set an initial value
-		update();
-	};
+	// Translate the center axis to a half of total size
+	ring.setAttribute('transform', 'translate(' + r + ', ' + r + ')');
+	// Bind the change event to the input
+	range.addEventListener('change', draw);
+	// Force to init the first time
+	draw();
 
 }(this));
