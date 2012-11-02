@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Ring Progress Bar</title>
+		<link rel="stylesheet" href="http://leanlinares.s3-website-us-east-1.amazonaws.com/shared.css" />
+		<link rel="stylesheet" href="ring.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Ring Progress Bar</h1>
+			<p>Handling an SVG path to get a wheel indicator.</p>
+		</header>
+
+		<div class="display">
+			<svg>
+				<path id="ring" fill="#76B13C" />
+				<circle cx="100" cy="100" r="82" fill="#F7F6F4" />
+				<circle cx="100" cy="100" r="73" fill="none" stroke="#76B13C" stroke-width="7" opacity=".5" />
+				<text x="100" y="100" text-anchor="middle" dominant-baseline="central" fill="#76B13C" font-size="60" font-weight="bold" />
+			</svg>
+
+			<input type="range" value="64" />
+		</div>
+
+		<footer>
+			<p>Experiment by Leandro Linares @lean8086</p>
+		</footer>
+
+		<a href="https://github.com/llinares/ring-progress-bar" target="_blank">
+			<img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" class="gh-ribbon" />
+		</a>
+
+		<script src="ring.js"></script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+.display {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75) inset;
+	/* Enable hardware acceleration */
+	background-color: #F7F6F4;
+	text-align: center;
+}
+
+svg {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+}
+
+input {
+	margin-top: 350px;
+}
