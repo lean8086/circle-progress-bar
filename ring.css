@@ -1,8 +1,48 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+h1 + p {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+aside {
+    color: #999;
+}
+
 .display {
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75) inset;
-	/* Enable hardware acceleration */
-	background-color: #F7F6F4;
-	text-align: center;
+    border: 7px solid #ddd;
+    height: 400px;
+    margin: 2em 0;
+    position: relative;
+    overflow: hidden;
+    width: 960px;
+    box-shadow: 0 0 15px 0 #555 inset;
+    background-color: #F7F6F4;
+    text-align: center;
+}
+
+.gh-ribbon {
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 svg {
