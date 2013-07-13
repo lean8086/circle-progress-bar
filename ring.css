@@ -12,7 +12,7 @@ h1 {
     margin-bottom: 0;
 }
 
-h1 + p {
+header p {
     font-weight: 300;
     font-size: 1.2em;
     margin: 1em 0;
@@ -22,11 +22,11 @@ a,
 a:hover,
 a:active,
 a:visited,
-aside {
+footer {
     color: #999;
 }
 
-.display {
+section {
     border: 7px solid #ddd;
     height: 400px;
     margin: 2em 0;
@@ -38,7 +38,7 @@ aside {
     text-align: center;
 }
 
-.gh-ribbon {
+#gh-ribbon {
     border: 0;
     position: absolute;
     right: 0;
