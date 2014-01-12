@@ -3,31 +3,41 @@
     <head>
         <meta charset="utf-8"/>
         <title>Ring Progress Bar</title>
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta http-equiv="cleartype" content="on"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+        <link rel="stylesheet" href="http://leanlinares.me/src/pages.css" data-noprefix/>
         <link rel="stylesheet" href="ring.css"/>
     </head>
     <body>
         <header>
             <h1>Ring Progress Bar</h1>
-            <p>Handling an SVG path to get a wheel indicator.</p>
+            <h2>Handling an SVG path to get a wheel indicator.</h2>
         </header>
 
         <section>
             <svg>
-                <path id="ring" fill="#76B13C" />
-                <circle cx="100" cy="100" r="82" fill="#F7F6F4" />
-                <circle cx="100" cy="100" r="73" fill="none" stroke="#76B13C" stroke-width="7" opacity=".5" />
-                <text x="100" y="100" text-anchor="middle" dominant-baseline="central" fill="#76B13C" font-size="60" font-weight="bold">64</text>
+                <path id="ring" fill="#00c790"/>
+                <circle cx="100" cy="100" r="82" fill="#0e2a36"/>
+                <circle cx="100" cy="100" r="73" fill="none" stroke="#00c790" stroke-width="7" opacity=".5"/>
+                <text x="100" y="100" text-anchor="middle" dominant-baseline="central" fill="#00c790" font-size="60" font-weight="bold">64</text>
             </svg>
-
-            <input type="range" value="64" />
         </section>
 
-        <footer>Experiment by <a href="http://leanlinares.me">Leandro Linares</a></footer>
+        <aside>Move this control to change the ring's value: <input type="range" name="range" value="64"/></aside>
 
-        <a href="https://github.com/llinares/ring-progress-bar" target="_blank" rel="external">
-            <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" id="gh-ribbon"/>
-        </a>
+        <footer>
+            <a href="http://leanlinares.me">
+                <img src="http://www.gravatar.com/avatar/cbb09e7b4e90ff4572d7a5c95566563b?s=42" width="42" height="42" id="avatar"/>
+                by Leandro Linares
+            </a>
+
+            <a href="https://github.com/llinares/ring-progress-bar" target="_blank" rel="external">
+                <img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" id="gh-ribbon"/>
+            </a>
+        </footer>
 
         <script src="ring.js"></script>
     </body>
