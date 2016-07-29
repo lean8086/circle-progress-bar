@@ -1,0 +1,32 @@
+{
+  "name": "circle-progress-bar",
+  "version": "1.0.0",
+  "description": "Handling an SVG path to get a wheel indicator.",
+  "main": "dist/circle-progress-bar.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llinares/circle-progress-bar.git"
+  },
+  "keywords": [
+    "progress",
+    "bar",
+    "ui",
+    "component",
+    "circle"
+  ],
+  "author": "Lean Linares (@llinares)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/llinares/circle-progress-bar/issues"
+  },
+  "homepage": "http://llinares.github.io/circle-progress-bar",
+  "devDependencies": {
+    "babel-preset-es2015": "6.9.0",
+    "del": "2.2.1",
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-rename": "1.2.2",
+    "mkdirp": "0.5.1"
+  },
+  "dependencies": {}
+}

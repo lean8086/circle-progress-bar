@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Circle Progress Bar</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!-- <link rel="stylesheet" href="circle-progress-bar.css"/> -->
+</head>
+<body>
+    <!-- <header>
+        <h1>Ring Progress Bar</h1>
+        <h2>Handling an SVG path to get a wheel indicator.</h2>
+    </header>
+
+    <section>
+        <svg>
+            <path id="ring" fill="#00c790"/>
+            <circle cx="100" cy="100" r="82" fill="#0e2a36"/>
+            <circle cx="100" cy="100" r="73" fill="none" stroke="#00c790" stroke-width="7" opacity=".5"/>
+            <text x="100" y="100" text-anchor="middle" dominant-baseline="central" fill="#00c790" font-size="60" font-weight="bold">64</text>
+        </svg>
+    </section>
+
+    <aside>Move this control to change the ring's value: <input type="range" name="range" value="64"/></aside> -->
+
+    <div>
+        <progress value="3" max="12" id="demo1"></progress>
+        <input type="range" name="range" value="3" max="12" id="range1"/>
+    </div>
+
+    <script>var exports = {};</script>
+    <script src="../build/circle-progress-bar.js"></script>
+    <script>
+        var demo1 = new CircleProgressBar({
+            'el': document.getElementById('demo1')
+        });
+
+        document.getElementById('range1').addEventListener('change', function () {
+            demo1.value = this.value;
+        });
+    </script>
+</body>
+</html>
